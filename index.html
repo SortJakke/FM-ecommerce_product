@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <script
+      src="https://kit.fontawesome.com/b3d02c8b45.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/dataHandler.js"></script>
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a
+        class="logo"
+        href="#"
+        aria-label="Sneakers logo redirects to home page"
+      >
+        <img src="./images/logo.svg" alt="Sneakers logo" />
+      </a>
+      <button
+        class="nav-toggle"
+        id="menu-button"
+        type="button"
+        aria-label="pages menu"
+        aria-haspopup="true"
+        aria-controls="pages-link"
+        aria-expanded="false"
+      ></button>
+      <div class="overlay"></div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Collections</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <span class="cart-icon" aria-label="cart" role="button" tabindex="0">
+          <span class="cart-number"></span>
+        </span>
+        <span class="user-icon" role="button" tabindex="0">
+          <img src="./images/image-avatar.png" alt="your profile image" />
+        </span>
+      </div>
+      <div class="cartbox hidden">
+        <div class="cart-header">Cart</div>
+        <div class="cart-main">
+          <span class="cart-main-message"> Your cart is empty. </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="product">
+      <figure class="product-image">
+        <div class="static-image-box">
+          <img
+            id="static-image"
+            alt="presentation image"
+            tabindex="0"
+            aria-label="Open image carousel"
+          />
+          <div class="thumbnail-section" id="static-thumbnail">
+            <span class="thumbnail thumbnail-active"> </span>
+            <span class="thumbnail"> </span>
+            <span class="thumbnail"> </span>
+            <span class="thumbnail"> </span>
+          </div>
+        </div>
+        <section
+          class="carousel hidden"
+          aria-roledescription="carousel"
+          aria-label="Product images"
+        >
+          <div class="close-section">
+            <button
+              class="close"
+              type="button"
+              aria-label="Close carousel"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="arrow icon-left"
+            aria-controls="carousel-image"
+            aria-label="Previous Slide"
+          ></button>
+          <button
+            type="button"
+            class="arrow icon-right"
+            aria-controls="carousel-image"
+            aria-label="Next Slide"
+          ></button>
+          <div class="image" id="carousel-image" aria-live="off"></div>
+          <div class="thumbnail-section">
+            <span class="thumbnail thumbnail-active"> </span>
+            <span class="thumbnail"> </span>
+            <span class="thumbnail"> </span>
+            <span class="thumbnail"> </span>
+          </div>
+        </section>
+      </figure>
+      <article class="product-info">
+        <span class="company-name"></span>
+        <h1 class="product-title"></h1>
+        <p class="description"></p>
+        <div class="price-container">
+          <span class="new-price"></span>
+          <span class="discount"></span>
+          <span class="old-price"></span>
+        </div>
+        <div class="inputs-section">
+          <div class="quantity-selector">
+            <button
+              class="icon-minus"
+              type="button"
+              aria-label="Remove one item"
+            ></button>
+            <span class="quantity">0</span>
+            <span class="quantity-error hidden">This field is required</span>
+            <button
+              class="icon-plus"
+              type="button"
+              aria-label="Sdd one more item"
+            ></button>
+          </div>
+          <button class="add-to-cart" type="submit">
+            <span class="button__cart-icon">
+              <img src="./images/icon-cart.svg" alt="cart-icon" />
+            </span>
+            <span class="button__description"> Add to cart </span>
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/SortJakke">Sortjakke</a>.
+    </footer>
+  </body>
+</html>

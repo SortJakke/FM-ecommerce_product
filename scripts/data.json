@@ -1,0 +1,31 @@
+{
+  "product": {
+    "productId": 1,
+    "images": [
+      "image-product-1.jpg",
+      "image-product-2.jpg",
+      "image-product-3.jpg",
+      "image-product-4.jpg"
+    ],
+    "thumbnails": [
+      "image-product-1-thumbnail.jpg",
+      "image-product-2-thumbnail.jpg",
+      "image-product-3-thumbnail.jpg",
+      "image-product-4-thumbnail.jpg"
+    ],
+    "imagesDescription": [
+      "casual sneaker in white and beige leather with an orange heel detail, featured prominently with the sole visible.",
+      "Pair of white and beige sneakers with orange heel detail, displayed on decorative stones against a modern background, suggesting style and versatility.",
+      "Casual sneaker in white and beige with orange heel detail, presented in a minimalist composition on natural stones, highlighting design and craftsmanship.",
+      "leather sneaker with a clean design in white and beige, orange heel accent, shown in profile to emphasize shape and finishing."
+    ],
+    "brand": "sneaker company",
+    "name": "fall limited edition sneaker",
+    "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
+    "pricing": {
+      "oldPrice": 250.0,
+      "discountPercentage": 50,
+      "adjustedPrice": 125.0
+    }
+  }
+}
