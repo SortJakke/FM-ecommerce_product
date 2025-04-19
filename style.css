@@ -530,6 +530,7 @@ a {
     align-items: center;
     gap: 3rem;
     border-bottom: 1px solid var(--color-gray-light);
+    position: relative;
   }
 
   .nav-toggle {
